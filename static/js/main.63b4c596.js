@@ -9381,10 +9381,10 @@
                               href: "https://dexscreener.com/ton/eqbm_vz5a0mdq9cewfytdpelbgvgsbmwsxcsxqp20ch97flg",
                               children: (0, T.jsx)("img", { src: u, alt: "" }),
                             }),
-                            (0, T.jsx)("a", {
-                              href: "https://dedust.io/swap/EQApa0Z5I0lMeitSTUtytce5Z5y4Yak5jBwS8Cw53P1Davtw/SCALE",
-                              children: (0, T.jsx)("img", { src: i, alt: "" }),
-                            }),
+                            // (0, T.jsx)("a", {
+                            //   href: "https://dedust.io/swap/EQApa0Z5I0lMeitSTUtytce5Z5y4Yak5jBwS8Cw53P1Davtw/SCALE",
+                            //   children: (0, T.jsx)("img", { src: i, alt: "" }),
+                            // }),
                             (0, T.jsx)("a", {
                               href: "https://www.dextools.io/app/en/ton/pair-explorer/EQBm_vZ5A0MDq9ceWFyTdPeLbgVGsbmWSxcsXqp20Ch97flG?t=1718904625919",
                               children: (0, T.jsx)("img", { src: o, alt: "" }),
@@ -9759,10 +9759,10 @@
                           href: "https://dexscreener.com/ton/eqbm_vz5a0mdq9cewfytdpelbgvgsbmwsxcsxqp20ch97flg",
                           children: (0, T.jsx)("img", { src: u, alt: "" }),
                         }),
-                        (0, T.jsx)("a", {
-                          href: "https://dedust.io/swap/EQApa0Z5I0lMeitSTUtytce5Z5y4Yak5jBwS8Cw53P1Davtw/SCALE",
-                          children: (0, T.jsx)("img", { src: i, alt: "" }),
-                        }),
+                        // (0, T.jsx)("a", {
+                        //   href: "https://dedust.io/swap/EQApa0Z5I0lMeitSTUtytce5Z5y4Yak5jBwS8Cw53P1Davtw/SCALE",
+                        //   children: (0, T.jsx)("img", { src: i, alt: "" }),
+                        // }),
                         (0, T.jsx)("a", {
                           href: "https://www.dextools.io/app/en/ton/pair-explorer/EQBm_vZ5A0MDq9ceWFyTdPeLbgVGsbmWSxcsXqp20Ch97flG?t=1718904625919",
                           children: (0, T.jsx)("img", { src: o, alt: "" }),
