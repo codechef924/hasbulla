@@ -1,0 +1,1261 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Simpsonfont;
+  src: url(./fonts/Simpsonfont\ DEMO.otf);
+}
+a{
+  text-decoration: none;
+}
+body{
+  overflow-x: hidden;
+  max-width: 100%;
+}
+p{
+  color: #120100;
+  font-family: Patrick Hand;
+  font-size: 1.31vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; /* 128.571% */
+}
+img{
+  width: 100%;
+}
+.btn{
+  border-radius: 37px;
+  border: 2px solid #000;
+  background: #FFF;
+  color: #000;
+  text-align: center;
+  font-family: Patrick Hand;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: .8vw 2vw;
+}
+.btn-2{
+  border-radius: 37px;
+  background: #000;
+  padding: .8vw 2vw;
+  color: #FFF;
+  text-align: center;
+  font-family: Simpsonfont;
+  font-size: 1.43vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* -----------header-------
+------- */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 8vw;
+  width: 100%;
+  margin-bottom: 4vw;
+}
+header .logo{
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+header .logo p{
+  margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffff05;
+  font-weight: 800;
+  font-size: 3vw;
+  -webkit-text-stroke: 1px #000
+}
+header .logo img{
+  width: 6vw;
+}
+header .socials{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+header .socials a img{
+  width: 4vw;
+}
+header .socials a{
+  transition: all .3s;
+}
+header .socials a:hover{
+  transform: translateY(-10px);
+}
+/* ----------hero-section--------
+-------- */
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(./images/hero-bg.png)no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  position: relative;
+  height: 65vw;
+}
+.hero-section .logo_img{
+  width: 20vw;
+  margin-bottom: 3vw;
+}
+.hero-section h1{
+  color: #FFF100;
+  font-family: Simpsonfont;
+  font-size: 6.25vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px;
+  -webkit-text-stroke-color: #000;
+}
+.hero-section h1 span{
+  color: #FFEC6E;
+
+}
+.hero-section .h-1{
+  margin-top: -9.8vw;
+  margin-left: -0.2vw;
+}
+.hero-section p{
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.hero-section a img{
+  width: 10vw;
+  transition: all .3s;
+}
+.hero-section a img:hover{
+  transform: translateY(-10px);
+  filter:hue-rotate(25deg);
+}
+.pink-box{
+  position: absolute;
+  width: 22vw;
+  bottom: 3vw;
+  left: 8vw;
+}
+.charac-1{
+  position: absolute;
+  width: 20vw;
+  left: 4vw;
+  bottom: 14vw;
+  animation: bounce 2s linear infinite alternate;
+}
+.charac-2{
+  position: absolute;
+  width: 17vw;
+  left: 17vw;
+  bottom: 10vw;
+  animation: swing 2s linear infinite alternate ;
+}
+.greenish-box{
+  position: absolute;
+  width: 30vw;
+  bottom: 2vw;
+  right: 8vw;
+}
+.charac-3{
+  position: absolute;
+  width: 22vw;
+  bottom: 14.8vw;
+  right: 20vw;
+  animation: bounce 2.5s linear infinite alternate;
+}
+.charac-4{
+  position: absolute;
+  width: 21vw;
+  bottom: 19.8vw;
+  right: 7vw;
+  animation: flash 3s linear infinite alternate;
+}
+.curve-div{
+  position: absolute;
+  transform: rotate(-12.59deg);
+  top: 14vw;
+  left: 2.5vw;
+}
+/* ----------buy---------
+------- */
+.buy {
+  padding: 5vw 10vw;
+  background: url(./images/buy-bg.png)no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin-top: -3.5vw;
+  position: relative;
+}
+.buy-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vw 12vw;
+  background:url(./images/bg-1.png)no-repeat;
+  background-size: 100% 65%;
+  background-position:50% 90%;
+}
+.buy-box h2{
+  color: #FFF;
+  text-align: center;
+  font-family: Simpsonfont;
+  font-size: 4.37vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #000;
+}
+.buy-box h6{
+  color: #FFF;
+  text-align: center;
+  font-family: Simpsonfont;
+  font-size: 1.93vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height:132%; /* 132.258% */
+  text-align: center;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buy-box .left,.buy-box .right{
+  width: 45%;
+  background: #8BD2FF;
+  border: 4px solid #050000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0;
+  
+}
+.buy-box .left div,.buy-box .right div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: .4vw;
+}
+.billpaper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vw;
+  padding: 7vw 10vw 35vw 10vw;
+  background: url(./images/billpaper-bg.png)no-repeat;
+  background-size: 100% 70%;
+  background-position: 0vw 0vw;
+  position: relative;
+  z-index: 3;
+  /* margin-top: 5vw; */
+}
+.billpaper h5{
+  color: #000;
+  font-family: Simpsonfont;
+  font-size: 2.37vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.billpaper .right img{
+  width: 20vw;
+  animation: bounce 2.5s linear infinite alternate,flash 5s linear infinite;
+}
+.charac-6{
+  position: absolute;
+  width: 21vw;
+  top: 19vw;
+  left: 4vw;
+  animation: wobble 3s linear infinite alternate;
+}
+.cloud-2{
+  position: absolute;
+  width: 17vw;
+  top: 30vw;
+  right: 6vw;
+  z-index: 4;
+}
+.sticker-1{
+  position: absolute;
+  width: 23vw;
+  top: 56vw;
+  right: 39vw;
+  z-index: 4;
+}
+.sticker-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 62.5vw;
+  right: 1vw;
+  z-index: 4;
+  padding: .3vw;
+  transform: rotate(90deg);
+}
+.sticker-2 span{
+  display: block;
+  color: #000;
+  font-family: Simpsonfont;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #fff;
+}
+/* -------------img-group---------
+------ */
+.img-group {
+  padding: 10vw 16vw 21vw 16vw;
+  background: url(./images/img-group-bg.png)no-repeat;
+  background-size: 100% 95%;
+  background-position: top center;
+  margin-top: -35vw;
+  position: relative;
+  z-index: 2;
+}
+.parent-img{
+  background: #51BBFF;
+  border: 4px solid #000400;
+  padding: 1vw;
+}
+.string-1{
+  position: absolute;
+  width: 8.8vw;
+  bottom: 3vw;
+  left: 46vw;
+  animation: rotate1 10s linear infinite alternate;
+}
+@keyframes rotate1 {
+  0%{
+      transform: translateX(-20vw);
+  }
+  100%{
+      transform: translateX(20vw);
+  }
+}
+.child-img{
+  background: #FDFFFE;
+  border: 4px solid #000400;
+  padding: 4vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.child-img img{
+  width: 33%;
+}
+.charac-7{
+  position: absolute;
+  width: 23vw;
+  bottom: 4vw;
+  left: 6vw;
+  animation:pulse 3s linear infinite alternate;
+}
+/* ---------parent-container-------
+------ */
+.parent-container{
+  padding: 5vw 10vw 10vw 10vw;
+  background: url(./images/parent-container-bg.png)no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  margin-top: -13vw;
+  position: relative;
+}
+.pipe-1{
+  position: absolute;
+  width: 7vw;
+  top: 31vw;
+  left: 4vw;
+  z-index: 4;
+}
+.cloud-3{
+  position: absolute;
+  width: 17vw;
+  top: 0vw;
+  right: 5vw;
+  z-index: 4;
+}
+.charac-8{
+  position: absolute;
+  width: 20vw;
+  bottom: -1vw;
+  right: 0vw;
+  z-index: 4;
+}
+.string-2{
+  position: absolute;
+  width: 7.1vw;
+  top: 92.5vw;
+  left: 23vw;
+  z-index: 2;
+}
+.string-3{
+  position: absolute;
+  width: 8.5vw;
+  right: 23vw;
+  top: 93vw;
+  z-index: 3;
+}
+.curve-div-2{
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -25vw;
+  top: 52vw;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vw 4vw;
+}
+.container-1{
+  background: url(./images/container-1-bg.png)no-repeat;
+  background-size: 100% 95%;
+  background-position: 0% 0vw;
+  position: relative;
+  z-index: 3;
+}
+.container-1 .right{
+  padding: 2vw 0;
+}
+.container-1 .right img{
+ transform: perspective(300vw)
+  rotateY(-18deg);
+  border-radius: 12px;
+  width: 95%;
+}
+.container-2{
+  background: url(./images/container-2-bg.png)no-repeat;
+  background-size: 100% 95%;
+  background-position: 0% 0vw;
+}
+.container-2 .right{
+  padding: 2vw 0;
+}
+.container-2 .right img{
+ transform: perspective(300vw)
+  rotateY(18deg);
+  border-radius: 12px;
+  width: 95%;
+}
+.container h6{
+  color: #000;
+  font-family: Simpsonfont;
+  font-size: 1.87vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container h6:nth-child(2){
+  margin-bottom: 1vw;
+}
+.container .left, .container .right{
+  width: 48%;
+}
+/* ----------dance--------
+----- */
+.dance{
+  padding: 5vw 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(./images/dance-bg.png)no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  position: relative;
+  margin-top: -8.3vw;
+  z-index: 1;
+}
+.dance a img{
+  width: 12vw;
+  position: relative;
+  z-index: 10000;
+  margin-top: -1vw;
+}
+.pipe-2{
+  position: absolute;
+  width: 8vw;
+  right:3vw;
+  top:47vw;
+}
+.cloud-4{
+  position: absolute;
+  width: 15vw;
+  left: 5vw;
+  top: 9vw;
+  z-index: 10;
+}
+.charac-9{
+  position: absolute;
+  width: 12vw;
+  left: 0;
+  bottom: 30vw;
+  z-index: 2;
+}
+.folding-page{
+  position: absolute;
+  width: 6vw;
+  top: 54.5vw;
+  left: 42.2vw;
+}
+.dance .dance-head{
+  width: 18vw;
+  margin-bottom:4vw;
+  position: relative;
+  z-index: 11;
+}
+.sticker-3{
+  position: absolute;
+  display: flex;
+  top: 30vw;
+  left: -6vw;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: rotate(90deg);
+}
+.sticker-3 span{
+  display: block;
+  color: #000;
+  font-family: Simpsonfont;
+  font-size: 1.2vw;
+  background: #Fff;
+  font-style: normal;
+  font-weight: 400;
+  padding: .2vw;
+  line-height: normal;
+}
+.box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box img{
+  aspect-ratio: 1/1;
+}
+.box p{
+  margin-bottom: 1.5vw;
+}
+.box .left {
+  width: 48%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw 2vw 2vw 2vw;
+  background: url(./images/left-bg.png)no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+}
+.box .right{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw 2vw 2vw 2vw;
+  background: url(./images/right-bg.png)no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  margin-top: -1vw;
+}
+.box-2{
+  width: 100%;
+  margin-top: 3vw;
+  position: relative;
+}
+.join-images{
+  position: absolute;
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+  border: 5px solid #000;
+  padding: 0.5vw;
+  top: 9.3vw;
+  right: 4vw;
+}
+.join-images img{
+  width: 33%;
+}
+/* -------footer----------
+--------- */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 5vw 10vw 7vw 10vw;
+  background: url(./images/footer-bg.png)no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin-top: -2vw;
+  z-index: 0;
+}
+.charac-10{
+  position: absolute;
+  width: 25vw;
+  left: 1vw;
+  top: 3vw;
+  animation: swing 2s linear infinite alternate;
+}
+.charac-11{
+  position: absolute;
+  width: 11vw;
+  right: 13vw;
+  top: 10vw;
+  animation: bounce 3s linear infinite alternate;
+}
+.charac-12{
+  position: absolute;
+  width: 16vw;
+  right: 1vw;
+  top: 4.5vw;
+  animation: flash 3s linear infinite alternate;
+}
+footer p{
+  text-align: center;
+  padding: 0 22vw;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 2vw;
+  position: relative;
+  z-index: 100;
+}
+footer .socials a img{
+  width: 5vw;
+}
+footer .socials a{
+  transition: all .3s;
+}
+footer .socials a:hover{
+  transform: translateY(-10px);
+}
+@media (max-width:600px) {
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  @font-face {
+      font-family: Simpsonfont;
+      src: url(./fonts/Simpsonfont\ DEMO.otf);
+  }
+  a{
+      text-decoration: none;
+  }
+  p{
+      color: #120100;
+      font-family: Patrick Hand;
+      font-size: 2.8vw;
+      font-style: normal;
+      text-align: center;
+      font-weight: 400;
+      line-height: 120%; /* 128.571% */
+  }
+  img{
+      width: 100%;
+  }
+  .btn{
+      border-radius: 37px;
+      border: 2px solid #000;
+      background: #FFF;
+      color: #000;
+      text-align: center;
+      font-family: Patrick Hand;
+      font-size: 2.2vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 1.1vw 4vw;
+  }
+  .btn-2{
+      border-radius: 37px;
+      background: #000;
+      padding: .8vw 2vw;
+      color: #FFF;
+      text-align: center;
+      font-family: Simpsonfont;
+      font-size: 3.2vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  }
+  /* -----------header-------
+  ------- */
+  header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3vw 8vw;
+      width: 100%;
+      gap: 5vw;
+      margin-bottom: 20vw;
+  }
+  header .logo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5vw;
+  }
+  header .logo p{
+      margin: 0;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #ffff05;
+      font-weight: 800;
+      font-size: 3.5vw;
+      -webkit-text-stroke: 1px #000
+  }
+  header .logo img{
+      width: 8vw;
+  }
+  header .socials{
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+  }
+  header .socials a img{
+      width: 6vw;
+  }
+  header .socials a{
+      transition: all .3s;
+  }
+  header .socials a:hover{
+      transform: translateY(-10px);
+  }
+  /* ----------hero-section--------
+  -------- */
+  .hero-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url(./images/hero-bg.png)no-repeat;
+      background-size: cover;
+      background-position: 50% 0;
+      position: relative;
+      height: 110vw;
+  }
+  .hero-section h1{
+      color: #FFF100;
+      font-family: Simpsonfont;
+      font-size: 9.25vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px;
+      -webkit-text-stroke-color: #000;
+  }
+  .hero-section h1 span{
+     color: #FFEC6E;
+
+  }
+  .hero-section .h-1{
+      margin-top: -14.7vw;
+      margin-left: -0.2vw;
+  }
+  .hero-section p{
+      text-align: center;
+      margin-bottom: 2vw;
+  }
+  .hero-section a img{
+      width: 18vw;
+      transition: all .3s;
+  }
+  .hero-section a img:hover{
+      transform: translateY(-10px);
+      filter:hue-rotate(25deg);
+  }
+  .cloud-1{
+      position: absolute;
+      width: 16vw;
+      top: 10vw;
+      left: 1vw;
+  }
+  .pink-box{
+      position: absolute;
+      width: 22vw;
+      bottom: 3vw;
+      left: 8vw;
+  }
+  .charac-1{
+      position: absolute;
+      width: 20vw;
+      left: 3vw;
+      bottom: 14vw;
+  }
+  .charac-2{
+      position: absolute;
+      width: 17vw;
+      left: 17vw;
+      bottom: 9vw;
+  }
+  .greenish-box{
+      position: absolute;
+      width: 30vw;
+      bottom: 2vw;
+      right: 8vw;
+  }
+  .charac-3{
+      position: absolute;
+      width: 22vw;
+      bottom: 14.8vw;
+      right: 19vw;
+  }
+  .charac-4{
+      position: absolute;
+      width: 21vw;
+      bottom: 19.8vw;
+      right: 7vw;
+  }
+  .curve-div{
+      position: absolute;
+      transform: rotate(-12.59deg);
+      top: 23vw;
+      left: 2.5vw;
+  }
+  /* ----------buy---------
+  ------- */
+  .buy {
+      padding: 5vw 5vw;
+      background: url(./images/buy-bg.png)no-repeat;
+      background-size: cover;
+      background-position: top center;
+      margin-top: -6.5vw;
+      position: relative;
+  }
+  .buy-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5vw 5vw;
+      background:url(./images/bg-1.png)no-repeat;
+      background-size: 100% 80%;
+      background-position:50% 90%;
+  }
+  .sticker-2 span{
+      font-size: 3vw;
+  }
+  .buy-box h2{
+      color: #FFF;
+      text-align: center;
+      font-family: Simpsonfont;
+      font-size: 7.37vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      -webkit-text-stroke: 2px;
+      -webkit-text-stroke-color: #000;
+  }
+  .buy-box h6{
+      color: #FFF;
+      text-align: center;
+      font-family: Simpsonfont;
+      font-size: 2.93vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height:132%; /* 132.258% */
+      text-align: center;
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .buy-box .left,.buy-box .right{
+      width: 48%;
+      border: 4px solid #050000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2vw;
+      padding: 2vw 0;
+      
+  }
+  .buy-box .left div,.buy-box .right div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: .4vw;
+  }
+  .billpaper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3vw;
+      padding: 7vw 5vw 35vw 5vw;
+      background: url(./images/billpaper-bg.png)no-repeat;
+      background-size: 97% 76%;
+      background-position: 0.5vw 0vw;
+      padding-top: 8vw;
+      position: relative;
+      z-index: 3;
+  }
+  .billpaper h5{
+      color: #000;
+      font-family: Simpsonfont;
+      font-size: 3.37vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      margin-left: 18vw;
+  }
+  .billpaper .right img{
+      width: 20vw;
+  }
+  .charac-6{
+      position: absolute;
+      width: 18vw;
+      top: 31vw;
+      left: 0vw;
+      z-index: 4;
+  }
+  .cloud-2{
+      position: absolute;
+      width: 18vw;
+      top: 36vw;
+      right: 1vw;
+      z-index: 4;
+  }
+  .sticker-1{
+      position: absolute;
+      width: 29vw;
+      top: 67vw;
+      right: 39vw;
+      z-index: 4;
+  }
+  .sticker-2{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 88vw;
+      right: -20vw;
+      z-index: 4;
+      padding: .3vw;
+      transform: rotate(90deg);
+  }
+  /* -------------img-group---------
+  ------ */
+  .img-group {
+      padding: 10vw 16vw 21vw 16vw;
+      background: url(./images/img-group-bg.png)no-repeat;
+      background-size: 270% 95%;
+      background-position: top center;
+      margin-top: -32.5vw;
+      position: relative;
+      z-index: 2;
+  }
+  .parent-img{
+      border: 4px solid #000400;
+      padding: 1vw;
+  }
+  .string-1{
+      position: absolute;
+      width: 12.8vw;
+      bottom: -5vw;
+      left: 46vw;
+  }
+  .child-img{
+      background: #FDFFFE;
+      border: 4px solid #000400;
+      padding: 4vw 2vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1vw;
+  }
+  .child-img img{
+      width: 90%;
+  }
+  .charac-7{
+      position: absolute;
+      width: 23vw;
+      bottom: 9vw;
+      left: 6vw;
+  }
+  /* ---------parent-container-------
+  ------ */
+  .parent-container{
+      padding: 34vw 10vw 10vw 10vw;
+      background: url(./images/parent-container-bg.png)no-repeat;
+      background-size: cover;
+      background-position: top center;
+      position: relative;
+      margin-top: -43vw;
+      position: relative;
+  }
+  .pipe-1{
+      position: absolute;
+      width: 9vw;
+      top: 129vw;
+      left: 2vw;
+      z-index: 4;
+  }
+  .cloud-3{
+      position: absolute;
+      width: 17vw;
+      top: 10vw;
+      right: 5vw;
+      z-index: 4;
+  }
+  .charac-8{
+      position: absolute;
+      width: 25vw;
+      bottom: -1vw;
+      right: 0vw;
+      z-index: 4;
+  }
+  .string-2{
+      position: absolute;
+      width: 7.1vw;
+      top: 76vw;
+      left: 23vw;
+  }
+  .string-3{
+      position: absolute;
+      width: 7.5vw;
+      right: 23vw;
+      top: 76vw;
+  }
+  .curve-div-2{
+      position: absolute;
+      transform: rotate(-90deg);
+      left: -63vw;
+      top: 52vw;
+  }
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20vw 4vw;
+  }
+  .container-1{
+      background: url(./images/container-1-bg.png)no-repeat;
+      background-size: 100% 95%;
+      background-position: 0% 0vw;
+      position: relative;
+      z-index: 3;
+  }
+  .container-2{
+      background: url(./images/container-2-bg.png)no-repeat;
+      background-size: 100% 95%;
+      background-position: 0% 0vw;
+  }
+  .container-2 .left{
+      order: 1;
+  }
+  .container-2 .right{
+      order: 2;
+  }
+  .container h6{
+      color: #000;
+      font-family: Simpsonfont;
+      font-size: 2.87vw;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+  }
+  .container h6:nth-child(2){
+      margin-bottom: 1vw;
+  }
+  .container .left, .container .right{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  /* ----------dance--------
+  ----- */
+  .dance{
+      padding: 5vw 10vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url(./images/dance-bg.png)no-repeat;
+      background-size: 210% 130%;
+      background-position: top center;
+      position: relative;
+      margin-top: -14.3vw;
+      z-index: 1;
+
+  }
+  .dance a img{
+      width: 18vw;
+      position: relative;
+      z-index: 2;
+  }
+  .dance a{
+    position: relative;
+    z-index: 5;
+  }
+  .pipe-2{
+      position: absolute;
+      width: 13vw;
+      right:3vw;
+      top:86vw;
+  }
+  .cloud-4{
+      position: absolute;
+      width: 20vw;
+      left: 5vw;
+      top: 9vw;
+      z-index: 10;
+  }
+  .charac-9{
+      position: absolute;
+      width: 24vw;
+      left: 0;
+      bottom: 30vw;
+      z-index: 2;
+  }
+  .folding-page{
+      position: absolute;
+      width: 11vw;
+      top: 93.5vw;
+      left: 74.7vw;
+  }
+  .dance .dance-head{
+      width: 36vw;
+      margin-bottom:4vw;
+      position: relative;
+      z-index: 11;
+  }
+  .sticker-3 {
+      position: absolute;
+      display: flex;
+      top: 43vw;
+      left: -12vw;
+      flex-direction: column;
+      align-items: flex-start;
+      transform: rotate(90deg);
+  }
+  .sticker-3 span {
+      font-size: 2vw;
+  }
+  .join-images {
+      border: 2.5px solid #000;
+  }
+  .box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8vw;
+  }
+  .box p{
+      margin-bottom: 1.5vw;
+  }
+  .box .left {
+      width: 90%;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5vw 2vw 2vw 2vw;
+      background: url(./images/left-bg.png)no-repeat;
+      background-size: 100% 100%;
+      background-position: top center;
+  }
+  .box .right{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5vw 2vw 2vw 2vw;
+      background: url(./images/right-bg.png)no-repeat;
+      background-size: 100% 100%;
+      background-position: top center;
+      margin-top: -4vw;
+  }
+  .box-2{
+      width: 100%;
+      margin-top: 3vw;
+      position: relative;
+  }
+  /* -------footer----------
+  --------- */
+  footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 5vw 10vw 3vw 10vw;
+      background: url(./images/footer-bg.png)no-repeat;
+      background-size: cover;
+      background-position: top center;
+      margin-top: -2.5vw;
+      z-index: 2;
+  }
+  .charac-10{
+      position: absolute;
+      width: 25vw;
+      left: 1vw;
+      top: 10vw;
+  }
+  .charac-11{
+      position: absolute;
+      width: 11vw;
+      right: 13vw;
+      top: 16vw;
+  }
+  .charac-12{
+      position: absolute;
+      width: 16vw;
+      right: 0vw;
+      top: 12vw;
+  }
+  footer p{
+      text-align: center;
+      padding: 0 10vw;
+  }
+  footer .socials {
+      display: flex;
+      align-items: center;
+      gap: 1vw;
+      margin-top: 12vw;
+      z-index: 100;
+  }
+  footer .socials a img{
+      width: 6vw;
+  }
+}
